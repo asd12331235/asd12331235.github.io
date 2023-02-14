@@ -1,37 +1,25 @@
-# website-aio
+# Incognito
+Access the world wide web
 
-## Who this repository is for
+# Setup
+```
+git clone https://github.com/caracal-js/Incognito.git
+cd Incognito
+git submodule update --init
+```
 
-This repository is for people looking for a convenient way to deploy Holy Unblocker.
+# Ultraviolet
+Ultraviolet's bare server by default is set to Incognito's official bare server (https://incog.dev/bare/)
 
-The website repository can run without other scripts being installed, however you'll only get the frontend. We configured all required [dependencies](#dependencies) to make deployment streamline.
+Change the bare server in `uv/uv.config.js` to whatever bare server you have.
 
-## Configurations
+Folder prefixes in `uv.sw.js` and `uv.config.js` will have to be changed to where `uv/` is located
 
-- Theatre files (games, apps) are hosted on [GitHub Pages](https://github.com/holy-unblocker/theatre).
-- Our official db-server instance is being proxied.
-- Website static files and Rammerhead are served as NPM packages.
+`/uv.sw.js` --> `/uv/uv.sw.js`
 
-## Dependencies
+# Games
+Games are not included by default due to the extremely large size of them. 
 
-These repositories are setup when you deploy an instance.
-
-- [Website (embedded)](https://github.com/holy-unblocker/website-embedded)
-- [Theatre](https://github.com/holy-unblocker/theatre)
-- [DB server](https://github.com/holy-unblocker/db-server)
-- [Bare Server Node](https://github.com/tomphttp/bare-server-node)
-- [Rammerhead](https://github.com/binary-person/rammerhead)
-
-## Deployment
-
-[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://github.com/holy-unblocker/website-aio/wiki/Deploy-to-Heroku)
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/holy-unblocker/website-aio/wiki/Run-on-Replit)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/holy-unblocker/website-aio/wiki/Deploy-on-Railway)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/holy-unblocker/website-aio/wiki/Remix-on-Glitch)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/holy-unblocker/website-aio/wiki/Deploy-to-Koyeb)
-
-If you are deploying to an alternative service or to a server, refer to [Deploy via terminal](https://github.com/holy-unblocker/website-aio/wiki/Deploy-via-terminal).
-
-Additional information can be found on the [wiki](https://github.com/holy-unblocker/website-aio/wiki).
-
-If you need help deploying, open a ticket in our [Discord server](https://discord.gg/gvenmHBZsQ).
+```
+git clone https://github.com/caracal-js/gfiles.git source
+```
